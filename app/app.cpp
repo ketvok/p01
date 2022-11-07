@@ -15,7 +15,7 @@ namespace vsite::oop::p1 {
 	}
 
 	bool f2(bool a) {
-		return a ? false : true;
+		return a ? false : true;  // Shorter alternative: return !a
 	}
 
 	int f3(int a, int b, int c, int d) {  // Default values are specified only in function declaration!
@@ -54,8 +54,14 @@ namespace vsite::oop::p1 {
 			return true;
 	*/
 
-	void f6(int a, int b, std::stringstream& ss) {
+	void f6(int a, int b, std::ostream& ss) {
 		ss << a << "\n" << b;
 	}
+
+	/*
+	"f6 bi kao zadnji argument trebao primati std::ostream&. Tako testiramo ispis
+	na bilo koji output stream, stringstream je samo jedna vrsta output streama
+	(cout je druga)"
+	*/
 
 } // namespace

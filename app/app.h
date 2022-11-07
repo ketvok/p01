@@ -41,6 +41,11 @@ namespace vsite::oop::p1
 
 	bool f5(std::string& s, int number);
 
-	void f6(int a, int b, std::stringstream& ss);
-
+	void f6(int a, int b, std::ostream& ss);
+	
+	/*
+	"f6 bi kao zadnji argument trebao primati std::ostream&. Tako testiramo ispis
+	na bilo koji output stream, stringstream je samo jedna vrsta output streama
+	(cout je druga)"
+	*/
 }
